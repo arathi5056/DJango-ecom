@@ -1,7 +1,10 @@
 from .base import *
 
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+
+
+WSGI_APPLICATION = 'api.wsgi.app'
 
 INSTALLED_APPS += [
     'debug_toolbar'
