@@ -1,8 +1,7 @@
 from .base import *
 
 DEBUG = config('DEBUG', cast=bool)
-ALLOWED_HOSTS = ['ip-address', '127.0.0.1', '.vercel.app']
-WSGI_APPLICATION = 'api.wsgi.app'
+ALLOWED_HOSTS = ['ip-address', '127.0.0.1']
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
